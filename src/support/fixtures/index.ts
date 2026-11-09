@@ -14,7 +14,7 @@ export const test = base.extend<Pages>({
     // Pop-ups que surgem em momentos imprevisíveis e cobrem a página
     await page.addLocatorHandler(
       page.getByRole('button', { name: 'Fechar banner de cookies' }),
-      async closeButton => closeButton.click()
+      closeButton => closeButton.click()
     );
     await page.addLocatorHandler(
       page
@@ -22,7 +22,7 @@ export const test = base.extend<Pages>({
           name: 'Promotional Wheel of Fortune Game Pop-up'
         })
         .getByRole('button', { name: 'Close' }),
-      async closeButton => closeButton.click()
+      closeButton => closeButton.click()
     );
     await use(page);
   },
