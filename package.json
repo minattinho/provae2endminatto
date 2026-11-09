@@ -1,0 +1,32 @@
+{
+  "name": "playwright-e2e",
+  "version": "1.0.0",
+  "description": "E2E tests da Americanas com Playwright",
+  "main": "index.js",
+  "author": "minattinho",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.83",
+    "@types/node": "^25.6.0",
+    "mkdirp": "^3.0.1",
+    "prettier": "^3.9.9",
+    "rimraf": "^6.1.3",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@playwright/test": "1.63.0",
+    "playwright": "1.63.0"
+  },
+  "scripts": {
+    "clean": "rimraf ./artifacts && mkdirp ./artifacts",
+    "format": "prettier --write \"**/**.[jt]s?(x)\"",
+    "verify": "prettier --check \"**/**.[jt]s?(x)\"",
+    "scenario": "npx playwright test src/scenarios/Americanas.spec.ts --workers 1",
+    "test": "npx playwright test",
+    "debug": "npx playwright test --debug --workers 1",
+    "ui": "npx playwright test --ui",
+    "show-report": "npx playwright show-report artifacts/report",
+    "actions": "npx playwright test",
+    "ci": "npm run clean && npm run verify && npm run test"
+  }
+}

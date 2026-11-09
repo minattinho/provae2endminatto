@@ -4,9 +4,9 @@ Testes end-to-end do site [Americanas](https://www.americanas.com.br/) com [Play
 
 ## GitHub Actions + SonarCloud
 
-[![Build and Tests](https://github.com/SEU_USUARIO/SEU_REPO/actions/workflows/node.js.yml/badge.svg)](https://github.com/SEU_USUARIO/SEU_REPO/actions/workflows/node.js.yml)
+[![Build and Tests](https://github.com/minattinho/provae2endminatto/actions/workflows/node.js.yml/badge.svg)](https://github.com/minattinho/provae2endminatto/actions/workflows/node.js.yml)
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SEU_PROJECT_KEY&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SEU_PROJECT_KEY)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=minattinho_provae2endminatto&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=minattinho_provae2endminatto)
 
 ## Casos de teste
 
